@@ -1,6 +1,6 @@
 package polymorphismTest;
 
-public abstract class Employee implements Payable{
+public abstract class Employee implements Payable, Payment{
 	private final String firstName;
 	private final String lastName;
 	private final String socialSecurityNumber;
