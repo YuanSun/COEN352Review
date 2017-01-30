@@ -42,7 +42,6 @@ public class HourlyEmployee extends Employee{
 		return hours;
 	}
 	
-	@Override
 	public double earnings() {
 		if(getHours() <= 40) //no overtime
 			return getWage() * getHours();
@@ -58,5 +57,11 @@ public class HourlyEmployee extends Employee{
 				getWage(),
 				"hours worked",
 				getHours());
+	}
+
+	@Override
+	public double getPaymentAmount() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
