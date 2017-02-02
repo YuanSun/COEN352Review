@@ -6,7 +6,7 @@ public class BlockingBuffer implements Buffer {
 	private final ArrayBlockingQueue<Integer> buffer; 
 	
 	public BlockingBuffer() {
-		buffer = new ArrayBlockingQueue<Integer>(1);
+		buffer = new ArrayBlockingQueue<Integer>(10);
 	}
 	
 	public void blockingPut(int value) throws InterruptedException {

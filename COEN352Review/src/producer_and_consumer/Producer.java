@@ -15,10 +15,10 @@ public class Producer implements Runnable{
 		
 		for (int count = 1; count <= 10; count++) {
 			try { // sleep 0 to 3 s, then place value in Buffer
-				Thread.sleep(generator.nextInt(3000));
+				Thread.sleep(generator.nextInt(500));
 				sharedLocation.blockingPut(count);
 				sum += count;
-				System.out.printf("\t%2d%n", sum);
+				//System.out.printf("\t%2d%n", sum);
 			} catch (InterruptedException ex) {
 				Thread.currentThread().interrupt();
 			}
